@@ -89,17 +89,17 @@ export default function Output({todayTemp, feelsLike, humidity }) {
 
         <div className=' border-t-1 border-solid  w-full rounded-lg -md p
     flex     '>
-            <p className="w-[100px]    bg-red opacity-50 bold" > Tempature </p>    
+            <p className="w-[130px]     bg-red opacity-50 bold" > Tempature </p>    
             <h1 className=" w-full bold"> { !todayTemp ==""? (  `${todayTemp} °C` ):('')  }</h1>
         </div>
         <div className=' border-t-1 border-solid  w-full rounded-lg -md
     b  flex      '>
-            <p className="w-[100px]    bg-red opacity-50 bold" > Feels Like </p>    
+            <p className="w-[130px]     bg-red opacity-50 bold" > Feels Like </p>    
             <h1 className=" w-full bold"> { !feelsLike ==""? (  `${feelsLike} °C` ):('')  }</h1>
         </div>
         <div className=' border-t-1 border-solid  w-full rounded-lg -md
     b  flex      '>
-            <p className="w-[100px]    bg-red opacity-50 bold" > Humitdity </p>    
+            <p className="w-[130px]     bg-red opacity-50 bold" > Humitdity </p>    
             <h1 className=" w-full bold"> { !humidity ==""? (  `${humidity} %` ):('')  }</h1>
         </div>
 
