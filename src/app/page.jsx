@@ -80,8 +80,18 @@ export default function Home() {
       .catch((err) => console.error(err));
   }
 
+
+
+ 
+
+  
+
   useEffect(() => {
-    console.log(data);
+
+    
+
+
+
   }, [data]);
 
   return (
@@ -122,7 +132,7 @@ export default function Home() {
     </div>
 
     <div className="w-full  rounded-lg  h-10 ">
-    <SunDail  />
+    <SunDail/>
     </div>
 
 
