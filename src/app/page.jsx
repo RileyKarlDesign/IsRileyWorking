@@ -14,6 +14,10 @@ export default function Home() {
   const [day, setDay] = useState("");
   const [location, setLocation] = useState("");
   const [todayTemp, setTodayTemp] = useState("");
+  const [feelsLike, setFeelsLike] = useState("");
+  const [humidity, setHumidity] = useState("");
+
+
 
   const Dog ='bdaead23864f03f24c13ca2fe4c0670c'
 
@@ -23,6 +27,8 @@ export default function Home() {
     console.log(e);
     // setLocation(e.location.name);
     setTodayTemp(e.main.temp);
+    setHumidity( e.main.humidity)
+    setFeelsLike( e.main.feels_like)
   }
    
 
@@ -79,11 +85,11 @@ export default function Home() {
   }, [data]);
 
   return (
-    <main className=' bg-red-500 h-screen flex flex-col relative gap-8 p-20 pl-4'>
+    <main className=' bg-red-500 h-screen  text-neutral-200 flex flex-col relative gap-8 p-20 pl-4'>
 
-      <h1 className="text-[10vw]  rotate-[5deg] absolute top-0 left-0  text-bold "> IsRileyWorking? </h1>
+      <h1 className="text-[10vw]  text-black rotate-[5deg] absolute top-0 left-0  text-bold "> IsRileyWorking? </h1>
 
-      <div className=" bg-gray-100 relative flex flex-col  rounded-md text-[10px] w-[300px] p-2 gap-4 shadow-2xl ">
+      <div className=" bg-neutral-800 relative flex flex-col  rounded-md text-[10px] w-[300px] p-2 gap-4 shadow-2xl ">
     
 
    
@@ -92,10 +98,10 @@ export default function Home() {
 
 
 
-     <div className=" bg-white shadow-lg rounded-lg p-2 flex flex-col gap-[2px]gap-[2px]  ">
+     <div className=" bg-neutral-700   shadow-lg rounded-lg p-2 flex flex-col gap-[2px]gap-[2px]  ">
 
       
-      <div className= ' w-full    flex   '>
+      <div className= ' w-full flex   '>
         <p className="w-[100px]  bg-red opacity-50 bold" > Location </p>
         <p className=" w-full ">London, United Kingdom </p>
       </div>
@@ -112,7 +118,7 @@ export default function Home() {
       
 
     <div className="w-full">
-    <Output  todayTemp={todayTemp} />
+    <Output  todayTemp={todayTemp} feelsLike={feelsLike} humidity={humidity} />
     </div>
 
     {/* <div className="w-full  rounded-lg  h-10 ">
