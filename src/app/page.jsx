@@ -89,7 +89,7 @@ export default function Home() {
 
       <h1 className="text-[10vw]  text-black rotate-[5deg] absolute top-0 left-0  text-bold "> IsRileyWorking? </h1>
 
-      <div className=" bg-neutral-800 relative flex flex-col  rounded-md text-[10px] w-[300px] p-2 gap-4 shadow-2xl ">
+      <div className=" bg-neutral-800 relative flex flex-col  rounded-xl text-[10px] w-[300px] p-2 gap-4 shadow-2xl ">
     
 
    
@@ -121,9 +121,9 @@ export default function Home() {
     <Output  todayTemp={todayTemp} feelsLike={feelsLike} humidity={humidity} />
     </div>
 
-    {/* <div className="w-full  rounded-lg  h-10 ">
+    <div className="w-full  rounded-lg  h-10 ">
     <SunDail  />
-    </div> */}
+    </div>
 
 
     <button onClick={getWeatherData} className="bg-black text-white p-4 rounded">
