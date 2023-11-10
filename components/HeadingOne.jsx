@@ -1,9 +1,11 @@
+"use client";
+
 import React from 'react'
 
-export default function headingOne({text}) {
+export default function HeadingOne({children}) {
   return (
 
-    <h1 className='text-neutral-300 text-xs '> {text} </h1>
+    <h1 className='text-neutral-300 text-xs '> {children} </h1>
 
   )
 }

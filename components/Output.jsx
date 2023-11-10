@@ -1,7 +1,7 @@
 "use client";
 import React from 'react'
 import { useEffect, useState } from "react";
-// import { HeadingOne } from "./HeadingOne"
+import { HeadingOne } from "./HeadingOne"
 
 export default function Output({todayTemp, feelsLike, humidity }) {
 
@@ -80,15 +80,14 @@ export default function Output({todayTemp, feelsLike, humidity }) {
 
   return (
 
-    < div className='flex flex-col gap-4'> 
+    < div className='flex flex-col gap-2'> 
 
-    {/* <HeadingOne text={'weather'} />  */}
+    
 
 
-    <div className=" w-full rounded-lg -md p-4 card shadow-lg flex  flex-col gap-[2px]  gap z-40">
+    <div className=" w-full rounded-lg -md p-4 card shadow-lg flex  flex-col gap-2 gap z-40">
 
-        <div className=' border-t-1 border-solid  w-full rounded-lg -md p
-    flex     '>
+        <div className=' bordert-1 border-solid border-red-500 w-full rounded-lg flex     '>
             <p className="w-[130px]     bg-red opacity-50 bold" > Tempature </p>    
             <h1 className=" w-full bold"> { !todayTemp ==""? (  `${todayTemp} °C` ):('')  }</h1>
         </div>
@@ -107,7 +106,7 @@ export default function Output({todayTemp, feelsLike, humidity }) {
     </div>
 
 
-    <div className="flex gap-4">
+    <div className="flex gap-2">
 
    
 
@@ -116,7 +115,7 @@ export default function Output({todayTemp, feelsLike, humidity }) {
 
     <div className= '   w-full     border-t-1 border-solid border-black   '>
         <p className=" bg-red opacity-50 bold " > Start   </p>
-        <h1 className='  text-[25px] font-light pl-1 block w-full  pr-1    '>{startTime}</h1> 
+        <h1 className='  text-[30px] text-light pl-1 block w-full  pr-1    '>{startTime}</h1> 
       </div>
     </div>
 
@@ -125,14 +124,14 @@ export default function Output({todayTemp, feelsLike, humidity }) {
 
     <div className= ' w-full border-t-1 border-solid border-black  '>
         <p className="  bg-red opacity-50 bold" > Break  </p>
-        <p className='pl-1 pr-1 w-full font-light text-[25px] ' >{breakTime}</p> 
+        <p className='pl-1 pr-1 w-full  text-[30px] text-light' >{breakTime}</p> 
       </div>
 
       </div>
 
       <div className= ' w-full  rounded-lg p-4 card  border-t-1 border-solid border-black  '>
         <p className="  bg-red opacity-50 bold" > Finish   </p>
-        <p className=' pl-1 pr-1  font-light text-[25px]  w-full   ' >{finishTime}</p>
+        <p className=' pl-1 pr-1   text-[30px] text-light w-full   ' >{finishTime}</p>
       </div>
 
       </div>

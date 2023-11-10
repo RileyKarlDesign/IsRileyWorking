@@ -14,16 +14,22 @@ body {
 }
 
 button{
-  background-color: rgb(70, 70, 70) ;
+  background-color: rgba(96, 96, 96, 0.828) ;
+  color: #201c1c;
 }
 
 
 .main-card{
-  background: linear-gradient(150deg, rgb(27, 27, 27) 50%, rgba(20, 20, 20, 0.956) 100%);
+  background: #201c1c;
+
 }
 
 .card{
-  background: linear-gradient(150deg, rgb(35, 35, 35) 40%, rgba(29, 29, 29, 0.175) 100%);
+  background: rgb(35, 35, 35);
+  border: 1px solid rgba(108, 97, 97, 0.209) ;
+  
+  box-shadow:inset 0px 5px 0px -10px rgb(231, 231, 231);
+  
 
 }
 
