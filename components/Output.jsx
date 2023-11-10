@@ -79,24 +79,34 @@ export default function Output({todayTemp}) {
 
   return (
 
-    <> 
+    < div className='flex flex-col gap-2'> 
 
-    <div className=" w-full rounded-lg -md p-2
- bg-white  flex    flex-col  gap z-40">
+
+    <div className=' border-t-1 border-solid  w-full rounded-lg -md p-2
+ bg-white  flex  shadow-lg   flex-col  '>
+        <p className="w-[100px]    bg-red opacity-50 bold" > Tempature </p>    
+        <h1 className=" w-full bold"> { !todayTemp ==""? (  `${todayTemp} °C` ):('')  }</h1>
+    </div>
+
+
+
+    <div className=" w-full rounded-lg -md p-2 bg-white shadow-lg flex  flex-col gap-[2px]  gap z-40">
+
+     
 
     <div className= '   w-full   flex  border-t-1 border-solid border-black   '>
         <p className="w-[100px]  bg-red opacity-50 bold " > Start Time  </p>
-        <p className='  pl-1 block w-full  pr-1   bg-yellow-100 '>{startTime}</p> 
+        <p className='  pl-1 block w-full  pr-1   bg-yellow-200 '>{startTime}</p> 
       </div>
 
       <div className= ' w-full   flex  border-t-1 border-solid border-black  '>
         <p className="w-[100px]  bg-red opacity-50 bold" > Break  </p>
-        <p className='pl-1 pr-1 w-full bg-blue-100 ' >{breakTime}</p> 
+        <p className='pl-1 pr-1 w-full bg-blue-200 ' >{breakTime}</p> 
       </div>
 
       <div className= ' w-full   flex  border-t-1 border-solid border-black  '>
         <p className="w-[100px] bg-red opacity-50 bold" > Finsih Time  </p>
-        <p className=' pl-1 pr-1  w-full  bg-green-100 ' >{finishTime}</p>
+        <p className=' pl-1 pr-1  w-full  bg-green-200 ' >{finishTime}</p>
       </div>
 
     
@@ -104,7 +114,7 @@ export default function Output({todayTemp}) {
 
     </div>
 
-    </>
+    </div>
 
   )
 }

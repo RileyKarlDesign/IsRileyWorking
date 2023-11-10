@@ -83,34 +83,29 @@ export default function Home() {
 
       <h1 className="text-[10vw]  rotate-[5deg] absolute top-0 left-0  text-bold "> IsRileyWorking? </h1>
 
-      <div className=" bg-white relative flex flex-col  rounded-md text-[10px] w-[50vw] p-4 gap-4 ">
+      <div className=" bg-gray-100 relative flex flex-col  rounded-md text-[10px] w-[300px] p-2 gap-4 shadow-2xl ">
     
 
    
 
-    <div className="contnet flex flex-col gap-4 ">
+    <div className="contnet flex flex-col gap-2 ">
 
 
 
-     <div className=" gap-10 rounded-lg  p-2">
+     <div className=" bg-white shadow-lg rounded-lg p-2 flex flex-col gap-[2px]gap-[2px]  ">
 
       
-      <div className= ' w-full  bg-white  flex   '>
+      <div className= ' w-full    flex   '>
         <p className="w-[100px]  bg-red opacity-50 bold" > Location </p>
         <p className=" w-full ">London, United Kingdom </p>
       </div>
 
-      <div className= ' w-full  bg-white  flex   '>
+      <div className= ' w-full    flex   '>
         <p className="w-[100px]  bg-red opacity-50 bold" > Day </p>
         <p className=" w-full "> {day} </p>
       </div>
 
-      <div className='w-full flex border-t-1 border-solid border-black  '>
-        <p className="w-[100px]    bg-red opacity-50 bold" > Tempature </p>
-        <p>{location}</p>
-        <h1 className=" w-full bold">{todayTemp}C</h1>
-      </div>
-
+     
       
       </div>
 
