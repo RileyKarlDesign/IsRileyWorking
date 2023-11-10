@@ -80,12 +80,12 @@ export default function Output({todayTemp, feelsLike, humidity }) {
 
   return (
 
-    < div className='flex flex-col gap-2'> 
+    < div className='flex flex-col gap-4'> 
 
     {/* <HeadingOne text={'weather'} />  */}
 
 
-    <div className=" w-full rounded-lg -md p-2 bg-neutral-700 shadow-lg flex  flex-col gap-[2px]  gap z-40">
+    <div className=" w-full rounded-lg -md p-4 card shadow-lg flex  flex-col gap-[2px]  gap z-40">
 
         <div className=' border-t-1 border-solid  w-full rounded-lg -md p
     flex     '>
@@ -107,20 +107,20 @@ export default function Output({todayTemp, feelsLike, humidity }) {
     </div>
 
 
-    <div className="flex gap-2">
+    <div className="flex gap-4">
 
    
 
-    <div className=" w-full rounded-lg -md p-2 bg-neutral-700 shadow-lg flex gap-[2px]  gap z-40">
+    <div className=" w-full rounded-lg -md p-4 card  shadow-lg flex gap-[2px]  gap z-40">
 
 
     <div className= '   w-full     border-t-1 border-solid border-black   '>
-        <p className=" bg-red opacity-50 bold " > Start Time  </p>
+        <p className=" bg-red opacity-50 bold " > Start   </p>
         <h1 className='  text-[25px] font-light pl-1 block w-full  pr-1    '>{startTime}</h1> 
       </div>
     </div>
 
-    <div className=" w-full rounded-lg -md p-2 bg-neutral-700 shadow-lg flex  flex-col gap-[2px]  gap z-40">
+    <div className=" w-full rounded-lg -md p-4 card shadow-lg flex  flex-col gap-[2px]   z-40">
 
 
     <div className= ' w-full border-t-1 border-solid border-black  '>
@@ -130,8 +130,8 @@ export default function Output({todayTemp, feelsLike, humidity }) {
 
       </div>
 
-      <div className= ' w-full  rounded-lg p-2 bg-neutral-700  border-t-1 border-solid border-black  '>
-        <p className="  bg-red opacity-50 bold" > Finsih Time  </p>
+      <div className= ' w-full  rounded-lg p-4 card  border-t-1 border-solid border-black  '>
+        <p className="  bg-red opacity-50 bold" > Finish   </p>
         <p className=' pl-1 pr-1  font-light text-[25px]  w-full   ' >{finishTime}</p>
       </div>
 

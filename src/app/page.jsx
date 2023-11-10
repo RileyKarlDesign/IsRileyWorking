@@ -106,16 +106,16 @@ export default function Home() {
 
       <h1 className=" text-[10vw]  text-black rotate-[5deg] absolute top-0 left-0  text-bold "> IsRileyWorking? </h1>
 
-      <div className=" bg-neutral-800 relative flex flex-col   border-neutral-900 border-2 rounded-xl text-[12px] w-[300px] p-2 gap-4  shadow-2xl ">
+      <div className=" main-card relative flex flex-col   border-neutral-900 border-2 rounded-xl text-[17px] w-[400px] p-4 gap-4  shadow-2xl ">
     
 
    
 
-    <div className="contnet flex flex-col gap-2 ">
+    <div className="contnet flex flex-col gap-4 ">
 
 
 
-     <div className=" bg-neutral-700   shadow-lg rounded-lg p-2 flex flex-col gap-[2px]  ">
+     <div className=" card   wshadow-lg rounded-lg p-4 flex flex-col gap-[2px]  ">
 
       
       <div className= ' w-full flex   '>
@@ -138,13 +138,13 @@ export default function Home() {
     <Output  todayTemp={todayTemp} feelsLike={feelsLike} humidity={humidity} />
     </div>
 
-    <div className="w-full  rounded-lg  h-10 ">
+    <div className="w-full  rounded-lg  h-28 ">
     <SunDail sunRise={sunRise} sunSet={sunSet}/>
    
     </div>
 
 
-    <button onClick={getWeatherData} className="bg-black text-white p-4 rounded">
+    <button onClick={getWeatherData} className=" text-white p-8 rounded-full">
       Get Answers
     </button>
      

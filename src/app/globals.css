@@ -9,6 +9,22 @@
 body {
 
 
+  
+
+}
+
+button{
+  background-color: rgb(70, 70, 70) ;
+}
+
+
+.main-card{
+  background: linear-gradient(150deg, rgb(27, 27, 27) 50%, rgba(20, 20, 20, 0.956) 100%);
+}
+
+.card{
+  background: linear-gradient(150deg, rgb(35, 35, 35) 40%, rgba(29, 29, 29, 0.175) 100%);
+
 }
 
 
