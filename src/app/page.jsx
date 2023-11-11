@@ -7,8 +7,10 @@ import Info from "../../components/Info";
 import { useState } from "react";
 import Footer from "../../components/Footer";
 
-export default function page() {
+export default function Page() {
+
   const [mode, setMode] = useState(1);
+
   return (
     <main className=' bg-white h-screen overflow-scroll  text-neutral-300 flex flex-col relative gap-8 sm:p-4  sm:pb-12 sm:pt-20 p-0  pt-20'>
       <h1 className=' text-[12vw] fixed text-black rotate-[5deg]  top-0 left-0  text-bold '>
