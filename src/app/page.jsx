@@ -102,7 +102,7 @@ export default function Home() {
   }, [data]);
 
   return (
-    <main className=' bg-red-500 h-screen   text-neutral-300 flex flex-col relative gap-8 p-20 pl-4'>
+    <main className=' bg-white h-screen   text-neutral-300 flex flex-col relative gap-8 p-20 pl-4'>
 
       <h1 className=" text-[10vw]  text-black rotate-[5deg] absolute top-0 left-0  text-bold "> IsRileyWorking? </h1>
 
