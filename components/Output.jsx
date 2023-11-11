@@ -34,42 +34,42 @@ export default function Output({todayTemp, feelsLike, humidity }) {
  
         setFinsihTime('15:45');
         setStartTime ('7:30');
-        SetBreakTime ( 'NA')
+        SetBreakTime ('1hr')
 
     }
     if(  todayTemp >= 20 ){
  
         setFinsihTime('15:45');
         setStartTime ('7:30');
-        SetBreakTime ( 'NA')
+        SetBreakTime ( '1hr')
 
     }
     if(  todayTemp >= 15 ){
  
         setFinsihTime('15:45');
         setStartTime ('7:30');
-        SetBreakTime ( 'NA')
+        SetBreakTime ( '1hr')
 
     }
     if(  todayTemp >= 10 ){
  
         setFinsihTime('15:45');
         setStartTime ('7:30');
-        SetBreakTime ( 'NA')
+        SetBreakTime ( '1hr')
 
     }
     if(  todayTemp >= 10 ){
  
         setFinsihTime('15:45')
         setStartTime ('7:30')
-        SetBreakTime ( 'NA')
+        SetBreakTime ( '1hr')
 
     }
     if(  todayTemp >= 5 ){
  
         setFinsihTime('20:45')
         setStartTime ('9:30')
-        SetBreakTime ( 'NA')
+        SetBreakTime ( '1hr')
 
     }
     console.log( todayTemp )
@@ -87,7 +87,7 @@ export default function Output({todayTemp, feelsLike, humidity }) {
 
     <div className=" w-full rounded-lg -md p-4 card shadow-lg flex  flex-col gap-2 gap z-40">
 
-        <div className=' bordert-1 border-solid border-red-500 w-full rounded-lg flex     '>
+        <div className=' bordert-1 border-solid  w-full rounded-lg flex     '>
             <p className="w-[130px]     bg-red opacity-50 bold" > Tempature </p>    
             <h1 className=" w-full bold"> { !todayTemp ==""? (  `${todayTemp} °C` ):('')  }</h1>
         </div>
@@ -115,26 +115,50 @@ export default function Output({todayTemp, feelsLike, humidity }) {
 
     <div className= '   w-full     border-t-1 border-solid border-black   '>
         <p className=" bg-red opacity-50 bold " > Start   </p>
-        <h1 className='  text-[30px] text-light pl-1 block w-full  pr-1    '>{startTime}</h1> 
+        <h1 className='  text-[50px] text-light pl-1 block w-full  pr-1    '>{startTime}</h1> 
       </div>
     </div>
 
-    <div className=" w-full rounded-lg -md p-4 card shadow-lg flex  flex-col gap-[2px]   z-40">
-
-
-    <div className= ' w-full border-t-1 border-solid border-black  '>
-        <p className="  bg-red opacity-50 bold" > Break  </p>
-        <p className='pl-1 pr-1 w-full  text-[30px] text-light' >{breakTime}</p> 
-      </div>
-
-      </div>
+  
 
       <div className= ' w-full  rounded-lg p-4 card  border-t-1 border-solid border-black  '>
         <p className="  bg-red opacity-50 bold" > Finish   </p>
-        <p className=' pl-1 pr-1   text-[30px] text-light w-full   ' >{finishTime}</p>
+        <p className=' pl-1 pr-1   text-[50px] text-light w-full   ' >{finishTime}</p>
       </div>
 
       </div>
+
+      <div className="flex gap-2">
+
+   
+
+        
+
+        <div className=" w-full rounded-lg -md p-4 card shadow-lg flex  flex-col gap-[2px]   z-40">
+
+
+        <div className= ' w-full border-t-1 border-solid border-black  '>
+            <p className="  bg-red opacity-50 bold" > Break  </p>
+            <p className='pl-1 pr-1 w-full  text-[50px] text-light' >{breakTime}</p> 
+        </div>
+
+        </div>
+        <div className=" w-full rounded-lg -md p-4 card shadow-lg flex  flex-col gap-[2px]   z-40">
+
+
+<div className= ' w-full border-t-1 border-solid border-black  '>
+    <p className="  bg-red opacity-50 bold" > Progress  </p>
+
+    <div class="progress-bar"  >
+    <progress style={{'display': 'none' }}{...{'width': '0' }} {...{'height': '0'}} value="75" min="0" max="100"  >75%</progress>
+    </div>
+
+</div>
+
+</div>
+   
+
+    </div>
 
 
 
