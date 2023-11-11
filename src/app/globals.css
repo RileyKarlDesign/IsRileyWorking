@@ -21,12 +21,17 @@ button{
 
 .main-card{
   background: #201c1c;
+  border-radius:16px;
 
 }
 
+.sundial{
+  border:1px rgba(0, 98, 255, 0.305) solid;
+}
 .card{
   background: rgb(35, 35, 35);
   border: 1px solid rgba(108, 97, 97, 0.209) ;
+  border-radius: 16px;
   
   box-shadow:inset 0px 5px 0px -10px rgb(231, 231, 231);
   

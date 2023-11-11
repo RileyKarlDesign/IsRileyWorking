@@ -100,7 +100,7 @@ useEffect(() => {
 
 
   return (
-    <div    className=' h-[100%] background-opacity-100 rounded-lg bg-blue-500  shadow-inner-xl overflow-hidden relative'>
+    <div    className=' h-[100%] background-opacity-100 rounded-full bg-blue-500  shadow-inner-xl overflow-hidden relative'>
 
     
             
@@ -123,7 +123,7 @@ useEffect(() => {
 
 </div> */}
 
-    <div style={{'left': + timePercentage + '%'}} className="  absolute h-4 w-4 top-[12px] left-1 bg-yellow-400 drop-shadow-[#fcba03] z-[50] rounded-full   ">
+    <div style={{'left': + timePercentage + '%'}} className="  absolute h-10 w-10 top-[8px] left-1 bg-yellow-400 drop-shadow-[#fcba03] z-[50] rounded-full   ">
 
     </div>
 

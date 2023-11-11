@@ -95,7 +95,7 @@ export default function Home() {
 
   useEffect(() => {
 
-  
+    getWeatherData()
 
 
 
@@ -118,7 +118,7 @@ export default function Home() {
 
 
 
-          <div className=" card   wshadow-lg rounded-lg p-2 flex flex-col gap-[2px]  ">
+          <div className=" card   wshadow-lg  p-4 flex flex-col gap-[2px]  ">
 
             
             <div className= ' w-full flex   '>
@@ -141,7 +141,7 @@ export default function Home() {
           <Output  todayTemp={todayTemp} feelsLike={feelsLike} humidity={humidity} />
           </div>
 
-          <div className="w-full  rounded-lg  h-28 ">
+          <div className="w-full  sundial rounded-full h-14">
           <SunDail sunRise={sunRise} sunSet={sunSet}/>
         
           </div>
@@ -156,7 +156,7 @@ export default function Home() {
             
 
 
-          </div>
+            </div>
           
       
 
