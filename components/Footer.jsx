@@ -8,7 +8,7 @@ export default function Footer() {
             Made with love by Riley Karl
         </p>
         <p className='text-center opacity-30'> 
-           
+             
         </p>
 
     </div>
